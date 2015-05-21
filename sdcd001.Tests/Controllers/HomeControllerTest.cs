@@ -21,6 +21,8 @@ namespace sdcd001.Tests.Controllers
             // Act
             ViewResult result = controller.Index() as ViewResult;
 
+            throw new Exception("test exception");
+
             // Assert
             Assert.IsNotNull(result);
         }
